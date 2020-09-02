@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fc0ddfd7-3d5b-4b55-bd54-65dd1b56c2c4" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1gts7nLJ1PDsCjsbreYM4rCRrh8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.13.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.12.54" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../小雅科技/小程序开发/求职招聘码" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="ts.external.directory.path" value="D:\Program Files\WebStorm 2020.2.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\我的日常开发\nodejs学习\day3\01-fs" />
+      <recent name="D:\我的日常开发\nodejs学习\day2\03-fs\source" />
+      <recent name="D:\我的日常开发\nodejs学习\day2\01-code" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.02-write.js">
+    <configuration name="01-buffer.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day2/03-fs/01-buffer.js" working-dir="$PROJECT_DIR$/day2/03-fs">
+      <method v="2" />
+    </configuration>
+    <configuration name="01-read.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day3/01-fs/01-read.js" working-dir="$PROJECT_DIR$/day3/01-fs">
+      <method v="2" />
+    </configuration>
+    <configuration name="02-write.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day3/01-fs/02-write.js" working-dir="$PROJECT_DIR$/day3/01-fs">
+      <method v="2" />
+    </configuration>
+    <configuration name="04.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day2/01-code/04.js" working-dir="$PROJECT_DIR$/day2">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day2/02-npm/npm.js" working-dir="$PROJECT_DIR$/day2/02-npm">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.02-write.js" />
+        <item itemvalue="Node.js.01-read.js" />
+        <item itemvalue="Node.js.01-buffer.js" />
+        <item itemvalue="Node.js.npm.js" />
+        <item itemvalue="Node.js.04.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc0ddfd7-3d5b-4b55-bd54-65dd1b56c2c4" name="Default Changelist" comment="" />
+      <created>1598945057918</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598945057918</updated>
+      <workItem from="1598945059077" duration="18807000" />
+      <workItem from="1599031393953" duration="9485000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598945516055">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1598945516055" />
+    <state x="740" y="334" key="FileChooserDialogImpl" timestamp="1598949551541">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="740" y="334" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1598949551541" />
+    <state width="1899" height="350" key="GridCell.Tab.0.bottom" timestamp="1599040102020">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1899" height="350" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1599040102020" />
+    <state width="1899" height="350" key="GridCell.Tab.0.center" timestamp="1599040102020">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1899" height="350" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1599040102020" />
+    <state width="1899" height="350" key="GridCell.Tab.0.left" timestamp="1599040102019">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1899" height="350" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1599040102019" />
+    <state width="1899" height="350" key="GridCell.Tab.0.right" timestamp="1599040102020">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1899" height="350" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1599040102020" />
+    <state x="413" y="266" key="SettingsEditor" timestamp="1598945378829">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="413" y="266" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1598945378829" />
+    <state x="616" y="270" key="run.anything.popup" timestamp="1598945493102">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="616" y="270" key="run.anything.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1598945493102" />
+  </component>
+</project>

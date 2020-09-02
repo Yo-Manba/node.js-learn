@@ -1,0 +1,18 @@
+{
+  "name": "itlike",
+  "version": "1.0.0",
+  "description": "itlike",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "itlike"
+  ],
+  "author": "lambert",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "underscore": "^1.11.0"
+  }
+}
