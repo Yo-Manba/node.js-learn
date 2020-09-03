@@ -47,3 +47,4 @@ fs.open(__dirname + '/source/c.txt', 'a', (err, fd)=>{
 
 //后续操作
 console.log('后续的操作')
+console.log('后续的操作')
