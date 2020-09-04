@@ -2,7 +2,7 @@
 
 // console.log(arguments.callee + '')
 // console.log(module);
-// console.log(__filename);
+console.log(__filename);
 console.log(__dirname);
 
 /*

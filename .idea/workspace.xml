@@ -43,14 +43,14 @@
       <recent name="D:\我的日常开发\nodejs学习\day2\01-code" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.npm.js">
-    <configuration name="01-buffer.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day2/03-fs/01-buffer.js" working-dir="$PROJECT_DIR$/day2/03-fs">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Node.js.03-copy.js">
     <configuration name="01-read.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day3/01-fs/01-read.js" working-dir="$PROJECT_DIR$/day3/01-fs">
       <method v="2" />
     </configuration>
     <configuration name="02-write.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day3/01-fs/02-write.js" working-dir="$PROJECT_DIR$/day3/01-fs">
+      <method v="2" />
+    </configuration>
+    <configuration name="03-copy.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day3/01-fs/03-copy.js" working-dir="$PROJECT_DIR$/day3/01-fs">
       <method v="2" />
     </configuration>
     <configuration name="04.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day2/01-code/04.js" working-dir="$PROJECT_DIR$/day2">
@@ -61,11 +61,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.npm.js" />
-        <item itemvalue="Node.js.02-write.js" />
-        <item itemvalue="Node.js.01-read.js" />
-        <item itemvalue="Node.js.01-buffer.js" />
+        <item itemvalue="Node.js.03-copy.js" />
         <item itemvalue="Node.js.04.js" />
+        <item itemvalue="Node.js.02-write.js" />
+        <item itemvalue="Node.js.npm.js" />
+        <item itemvalue="Node.js.01-read.js" />
       </list>
     </recent_temporary>
   </component>
@@ -78,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1598945057918</updated>
       <workItem from="1598945059077" duration="18807000" />
-      <workItem from="1599031393953" duration="11619000" />
+      <workItem from="1599031393953" duration="18555000" />
     </task>
     <servers />
   </component>
@@ -94,22 +94,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="334" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1598949551541" />
-    <state width="1899" height="225" key="GridCell.Tab.0.bottom" timestamp="1599101758788">
+    <state width="949" height="416" key="GridCell.Tab.0.bottom" timestamp="1599188780328">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="225" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1599101758788" />
-    <state width="1899" height="225" key="GridCell.Tab.0.center" timestamp="1599101758788">
+    <state width="949" height="416" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1599188780328" />
+    <state width="949" height="416" key="GridCell.Tab.0.center" timestamp="1599188780328">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="225" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1599101758788" />
-    <state width="1899" height="225" key="GridCell.Tab.0.left" timestamp="1599101758788">
+    <state width="949" height="416" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1599188780328" />
+    <state width="949" height="416" key="GridCell.Tab.0.left" timestamp="1599188780328">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="225" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1599101758788" />
-    <state width="1899" height="225" key="GridCell.Tab.0.right" timestamp="1599101758788">
+    <state width="949" height="416" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1599188780328" />
+    <state width="949" height="416" key="GridCell.Tab.0.right" timestamp="1599188780328">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="225" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1599101758788" />
+    <state width="949" height="416" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1599188780328" />
     <state x="413" y="266" key="SettingsEditor" timestamp="1598945378829">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
