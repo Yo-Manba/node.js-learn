@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绚丽的小球-面向对象版本</title>
+    <style>
+        #canvas {
+            display: block;
+            margin: 150px auto;
+            background-color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas">当前浏览器版本不支持canvas!</canvas>
+
+    <script src="./underScore.js"></script>
+    <script>
+        // 获取当前画布 
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = 1000;
+        canvas.height = 600;
+
+        // 小球类
+        class Ball {
+            // 构造器
+            constructor(x, y, color) {
+                this.x = x;
+                this.y = y;
+                this.color = color;
+                this.r = 40;
+            }
+
+            // 绘制小球
+            render() {
+                ctx.save();
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+                ctx.fillStyle = this.color;
+                ctx.fill();
+                ctx.restore();
+            }
+        }
+
+        // 会移动的小球
+        class MoveBall extends Ball {
+            constructor(x, y, color) {
+                super(x, y, color);
+
+                // 随机量的变化
+                this.dx = _.random(-5, 5);
+                this.dy = _.random(-5, 5);
+                this.dr = _.random(1, 3);
+            }
+
+            upDate() {
+                this.x += this.dx;
+                this.y += this.dy;
+                this.r -= this.dr;
+                if (this.r < 0) this.r = 0;
+            }
+        }
+
+        // 小球实例化需要的数组
+        let ballArr = [];
+        let colorArr = ['red', 'orange', 'yellow', 'green', 'cyan', 'blue', 'purple', 'pink'];
+
+        // 监听鼠标移动 （实例化小球）
+        canvas.addEventListener('mousemove', (e) => {
+            ballArr.push(new MoveBall(e.offsetX, e.offsetY, colorArr[0, _.random(colorArr.length - 1)]));
+            // 如果小球数量大于500个，剔除前段生成的200个
+            if(ballArr.length > 500) {
+                ballArr.splice(0, 200);
+            }
+            console.log(ballArr);
+        });
+
+        // 开启定时器
+        setInterval(() => {
+            // 清屏
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // 绘制
+            for (let i = 0; i < ballArr.length; i++) {
+                ballArr[i].render();
+                ballArr[i].upDate();
+            }
+        }, 50);
+
+    </script>
+</body>
+
+</html>
