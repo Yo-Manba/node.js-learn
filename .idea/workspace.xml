@@ -10,6 +10,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -26,11 +28,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.13.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.12.54" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/day4/01-http" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
     <property name="ts.external.directory.path" value="D:\Program Files\WebStorm 2020.2.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -46,29 +50,29 @@
       <recent name="D:\我的日常开发\nodejs学习\day2\01-code" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.03-http.js">
-    <configuration name="01-http.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day4/01-http/01-http.js" working-dir="$PROJECT_DIR$/day4/01-http">
+  <component name="RunManager" selected="Node.js.02.js">
+    <configuration name="01.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day4/02-http-server/01.js" working-dir="$PROJECT_DIR$/day4/02-http-server">
       <method v="2" />
     </configuration>
-    <configuration name="01.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day3/02-http/01.js" working-dir="$PROJECT_DIR$/day3/02-http">
+    <configuration name="02.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day4/02-http-server/02.js" working-dir="$PROJECT_DIR$/day4/02-http-server">
       <method v="2" />
     </configuration>
-    <configuration name="02-http.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day4/01-http/02-http.js" working-dir="$PROJECT_DIR$/day4/01-http">
+    <configuration name="04-url.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day4/01-http/04-url.js" working-dir="$PROJECT_DIR$/day4/01-http">
       <method v="2" />
     </configuration>
-    <configuration name="03-http.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day4/01-http/03-http.js" working-dir="$PROJECT_DIR$/day4/01-http">
+    <configuration name="05-response.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day4/01-http/05-response.js" working-dir="$PROJECT_DIR$/day4/01-http">
       <method v="2" />
     </configuration>
-    <configuration name="06-pipe.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day3/01-fs/06-pipe.js" working-dir="$PROJECT_DIR$/day3/01-fs">
+    <configuration name="06-post.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day4/01-http/06-post.js" working-dir="$PROJECT_DIR$/day4/01-http">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.03-http.js" />
-        <item itemvalue="Node.js.02-http.js" />
-        <item itemvalue="Node.js.01-http.js" />
+        <item itemvalue="Node.js.02.js" />
         <item itemvalue="Node.js.01.js" />
-        <item itemvalue="Node.js.06-pipe.js" />
+        <item itemvalue="Node.js.06-post.js" />
+        <item itemvalue="Node.js.05-response.js" />
+        <item itemvalue="Node.js.04-url.js" />
       </list>
     </recent_temporary>
   </component>
@@ -81,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1598945057918</updated>
       <workItem from="1598945059077" duration="18807000" />
-      <workItem from="1599031393953" duration="34002000" />
+      <workItem from="1599031393953" duration="45144000" />
     </task>
     <servers />
   </component>
@@ -101,22 +105,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="334" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1598949551541" />
-    <state width="1899" height="400" key="GridCell.Tab.0.bottom" timestamp="1599462622694">
+    <state width="1899" height="303" key="GridCell.Tab.0.bottom" timestamp="1599530989509">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="400" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1599462622694" />
-    <state width="1899" height="400" key="GridCell.Tab.0.center" timestamp="1599462622694">
+    <state width="1899" height="303" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1599530989509" />
+    <state width="1899" height="303" key="GridCell.Tab.0.center" timestamp="1599530989509">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="400" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1599462622694" />
-    <state width="1899" height="400" key="GridCell.Tab.0.left" timestamp="1599462622694">
+    <state width="1899" height="303" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1599530989509" />
+    <state width="1899" height="303" key="GridCell.Tab.0.left" timestamp="1599530989509">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="400" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1599462622694" />
-    <state width="1899" height="400" key="GridCell.Tab.0.right" timestamp="1599462622694">
+    <state width="1899" height="303" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1599530989509" />
+    <state width="1899" height="303" key="GridCell.Tab.0.right" timestamp="1599530989509">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="400" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1599462622694" />
+    <state width="1899" height="303" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1599530989509" />
     <state x="413" y="266" key="SettingsEditor" timestamp="1598945378829">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
