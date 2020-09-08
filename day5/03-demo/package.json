@@ -1,5 +1,5 @@
 {
-  "name": "01-http-server",
+  "name": "03-demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,6 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^3.1.5"
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "moment": "^2.27.0",
+    "morgan": "^1.10.0"
   }
 }
