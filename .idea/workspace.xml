@@ -22,6 +22,9 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/day5/03-demo/package.json" />
+  </component>
   <component name="ProjectId" id="1gts7nLJ1PDsCjsbreYM4rCRrh8" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -87,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1598945057918</updated>
       <workItem from="1598945059077" duration="18807000" />
-      <workItem from="1599031393953" duration="64334000" />
+      <workItem from="1599031393953" duration="76310000" />
     </task>
     <servers />
   </component>
@@ -103,26 +106,26 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="702" y="380" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1599444933208" />
-    <state x="740" y="334" key="FileChooserDialogImpl" timestamp="1598949551541">
+    <state x="740" y="334" key="FileChooserDialogImpl" timestamp="1599639446427">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="740" y="334" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1598949551541" />
-    <state width="1899" height="260" key="GridCell.Tab.0.bottom" timestamp="1599559274972">
+    <state x="740" y="334" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1599639446427" />
+    <state width="1899" height="413" key="GridCell.Tab.0.bottom" timestamp="1599642897089">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="260" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1599559274972" />
-    <state width="1899" height="260" key="GridCell.Tab.0.center" timestamp="1599559274972">
+    <state width="1899" height="413" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1599642897089" />
+    <state width="1899" height="413" key="GridCell.Tab.0.center" timestamp="1599642897089">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="260" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1599559274972" />
-    <state width="1899" height="260" key="GridCell.Tab.0.left" timestamp="1599559274972">
+    <state width="1899" height="413" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1599642897089" />
+    <state width="1899" height="413" key="GridCell.Tab.0.left" timestamp="1599642897089">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="260" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1599559274972" />
-    <state width="1899" height="260" key="GridCell.Tab.0.right" timestamp="1599559274972">
+    <state width="1899" height="413" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1599642897089" />
+    <state width="1899" height="413" key="GridCell.Tab.0.right" timestamp="1599642897089">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="260" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1599559274972" />
+    <state width="1899" height="413" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1599642897089" />
     <state width="1899" height="226" key="GridCell.Tab.1.bottom" timestamp="1599554387871">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -179,9 +182,21 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="502" y="308" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1160@0.0.1920.1160" timestamp="1599554368558" />
+    <state x="0" y="0" width="1611" height="860" key="dock-window-1" timestamp="1599624587347">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="0" y="0" width="1611" height="860" key="dock-window-1/0.0.1920.1160@0.0.1920.1160" timestamp="1599624587347" />
+    <state x="677" y="388" key="jetbrains.nodejs.interpreters-dialog" timestamp="1599639426106">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="677" y="388" key="jetbrains.nodejs.interpreters-dialog/0.0.1920.1160@0.0.1920.1160" timestamp="1599639426106" />
     <state x="616" y="270" key="run.anything.popup" timestamp="1598945493102">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="616" y="270" key="run.anything.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1598945493102" />
+    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1599635880632">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1599635880632" />
   </component>
 </project>

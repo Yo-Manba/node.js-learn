@@ -1,3 +1,32 @@
 <% include header.ejs %>
-<h2 class="text-center">留言板</h2>
+
+<h2 class="text-center mt-5 mb-4">留言板</h2>
+<div class="text-center">
+    <a href="/new" class="btn btn-sm btn-danger">我要留言</a>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <%if(entries.length){%>
+            <%entries.forEach((e, i)=>{%>
+                <div class="card mb-3" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%=e.title%>
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            <%=e.published%>
+                        </h6>
+                        <p class="card-text">
+                            <%=e.content%>
+                        </p>
+                    </div>
+                </div>
+            <%})%>
+        <%}else{%>
+            暂无留言！<a href="/new">去添加一条留言！</a>
+        <%}%>
+    </div>
+</div>
+
 <% include footer.ejs %>
