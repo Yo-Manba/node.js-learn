@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--链接bootstrap样式-->
+    <link href="lib/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/chat.css">
+    <!--设置站点图标-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <title>撩课学院-IT人的自我成长社区</title>
+</head>
+<body>
+    <div class="panel panel-default">
+        <div class="panel-heading text-center">
+                <span class="glyphicon glyphicon-cloud" style="
+                font-size: 100px; color: #E9232C"></span>
+            <h2 class="text-danger" style="margin-top: 10px;">小撩机器人(简化版)</h2>
+        </div>
+        <div class="panel-body" style="position: relative;">
+            <ul id="chatList">
+                  <li class="service"><span class="chat-msg">我想吃饭</span></li>
+                  <li class="custom"><span class="chat-msg">吃什么饭, 赶紧敲代码去!</span></li>
+                  <li class="service"><span class="chat-msg">我想吃饭</span></li>
+                  <li class="custom"><span class="chat-msg">吃什么饭, 赶紧敲代码去!</span></li>
+                  <li class="service"><span class="chat-msg">我想吃饭</span></li>
+                  <li class="custom"><span class="chat-msg">吃什么饭, 赶紧敲代码去!</span></li>
+                  <li class="service"><span class="chat-msg">我想吃饭</span></li>
+                  <li class="custom"><span class="chat-msg">吃什么饭, 赶紧敲代码去!</span></li>
+                  <li class="service"><span class="chat-msg">我想吃饭</span></li>
+                  <li class="custom"><span class="chat-msg">吃什么饭, 赶紧敲代码去!</span></li>
+            </ul>
+        </div>
+        <div class="panel-footer">
+            <input type="text" id="msg" placeholder="请输入聊天内容">
+            <button id="btn_send" class="btn btn-primary">发送</button>
+            <button id="btn_close" class="btn btn-danger">关闭</button>
+        </div>
+    </div>
+    <script src="/lib/js/jquery-3.3.1.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        // 1. 建立连接
+        var socket = io.connect('http://localhost:3000/');
+        socket.on('connect', (data)=>{
+            console.log(data);
+            // 1.1 打开通道
+            socket.emit('open');
+        });
+
+        // 2. 监听
+        socket.on('msg', (data)=>{
+            console.log(data);
+            dealWithMsg('service', data);
+        });
+
+        $('#btn_send').on('click', ()=>{
+             // 1. 获取内容
+            let msg = $('#msg').val();
+            // 2. 显示到界面
+            dealWithMsg('custom', msg);
+            // 3. 发送数据给服务器
+            socket.emit('msg', msg);
+            // 4. 清空输入框
+            $('#msg').val('');
+        });
+
+        // 3. 信息处理
+        let dealWithMsg = (className, data)=>{
+            // 3.1 创建li标签
+            let $liDom = $('<li>');
+            $liDom.attr({
+               'class':  className
+            });
+
+            // 3.2 创建li标签
+            let $span = $('<span>');
+            $span.attr({
+                'class':  'chat-msg'
+            });
+            $span.text(data);
+            $liDom.append($span);
+
+            $('#chatList').append($liDom);
+
+            // 让滚动条在最底部显示
+            let scrollHeight = $('#chatList')[0].scrollHeight;
+            $('#chatList').scrollTop(scrollHeight);
+        };
+    </script>
+</body>
