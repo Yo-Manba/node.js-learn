@@ -1,0 +1,54 @@
+
+    ===========================================
+    错误名：SyntaxError, 
+
+    错误信息：Unexpected token n in JSON at position 1, 
+
+    错误时间：Thu Sep 10 2020 10:13:01 GMT+0800 (GMT+08:00), 
+
+    错误堆栈：SyntaxError: Unexpected token n in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at D:\我的日常开发\nodejs学习\day6\01-express\app.js:9:27
+    at Layer.handle [as handle_request] (D:\我的日常开发\nodejs学习\day6\01-express\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\我的日常开发\nodejs学习\day6\01-express\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\我的日常开发\nodejs学习\day6\01-express\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\我的日常开发\nodejs学习\day6\01-express\node_modules\express\lib\router\layer.js:95:5)
+    at D:\我的日常开发\nodejs学习\day6\01-express\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\我的日常开发\nodejs学习\day6\01-express\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\我的日常开发\nodejs学习\day6\01-express\node_modules\express\lib\router\index.js:275:10)
+    at expressInit (D:\我的日常开发\nodejs学习\day6\01-express\node_modules\express\lib\middleware\init.js:40:5), 
+
+    ===========================================
+    
+    ===========================================
+    错误名：SyntaxError, 
+
+    错误信息：Unexpected token n in JSON at position 1, 
+
+    错误时间：Thu Sep 10 2020 10:13:03 GMT+0800 (GMT+08:00), 
+
+    错误堆栈：SyntaxError: Unexpected token n in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at D:\我的日常开发\nodejs学习\day6\01-express\app.js:9:27
+    at Layer.handle [as handle_request] (D:\我的日常开发\nodejs学习\day6\01-express\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\我的日常开发\nodejs学习\day6\01-express\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\我的日常开发\nodejs学习\day6\01-express\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\我的日常开发\nodejs学习\day6\01-express\node_modules\express\lib\router\layer.js:95:5)
+    at D:\我的日常开发\nodejs学习\day6\01-express\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\我的日常开发\nodejs学习\day6\01-express\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\我的日常开发\nodejs学习\day6\01-express\node_modules\express\lib\router\index.js:275:10)
+    at expressInit (D:\我的日常开发\nodejs学习\day6\01-express\node_modules\express\lib\middleware\init.js:40:5), 
+
+    ===========================================
+    
+    ===========================================
+    错误名：Error, 
+
+    错误信息：ENOENT: no such file or directory, open 'D:\我的日常开发\nodejs学习\day6\01-express\ccccc.log', 
+
+    错误时间：Thu Sep 10 2020 10:22:21 GMT+0800 (GMT+08:00), 
+
+    错误堆栈：Error: ENOENT: no such file or directory, open 'D:\我的日常开发\nodejs学习\day6\01-express\ccccc.log', 
+
+    ===========================================
+    
