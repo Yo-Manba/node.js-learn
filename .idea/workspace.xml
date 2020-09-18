@@ -28,6 +28,9 @@
   <component name="ChangeListManager">
     <list default="true" id="fc0ddfd7-3d5b-4b55-bd54-65dd1b56c2c4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day8/lkschool/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/day8/lkschool/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day8/lkschool/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/day8/lkschool/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day8/lkschool/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/day8/lkschool/src/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -70,7 +73,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.13.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.12.54" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day8/01-mongoose" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day10/lkfile/views" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
@@ -86,17 +89,14 @@
       <recent name="D:\我的日常开发\nodejs学习\day2\03-fs\source" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\我的日常开发\nodejs学习\day8\01-mongoose" />
-      <recent name="D:\我的日常开发\nodejs学习\day7\01-promise\data" />
-      <recent name="D:\我的日常开发\nodejs学习\day7\01-promise" />
-      <recent name="D:\我的日常开发\nodejs学习\day5\02-express\public" />
-      <recent name="D:\我的日常开发\nodejs学习\day4\01-http" />
+      <recent name="D:\我的日常开发\nodejs学习\day10\lkfile\views" />
+      <recent name="D:\我的日常开发\nodejs学习\day8\lkschool\public\back\images" />
+      <recent name="D:\我的日常开发\nodejs学习\day8\lkschool\public\web\Css" />
+      <recent name="D:\我的日常开发\nodejs学习\day8\lkschool\views\web" />
+      <recent name="D:\我的日常开发\nodejs学习\day8\lkschool\public\web" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.app.js">
-    <configuration name="01.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day8/01-mongoose/01.js" working-dir="$PROJECT_DIR$/day8/01-mongoose">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Node.js.app.js (1)">
     <configuration name="02.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day8/01-mongoose/02.js" working-dir="$PROJECT_DIR$/day8/01-mongoose">
       <method v="2" />
     </configuration>
@@ -106,16 +106,19 @@
     <configuration name="04.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day8/01-mongoose/04.js" working-dir="$PROJECT_DIR$/day8/01-mongoose">
       <method v="2" />
     </configuration>
+    <configuration name="app.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day10/lkfile/app.js" working-dir="$PROJECT_DIR$/day10/lkfile">
+      <method v="2" />
+    </configuration>
     <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day8/lkschool/src/app.js" working-dir="$PROJECT_DIR$/day8/lkschool">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.app.js (1)" />
         <item itemvalue="Node.js.app.js" />
         <item itemvalue="Node.js.04.js" />
         <item itemvalue="Node.js.03.js" />
         <item itemvalue="Node.js.02.js" />
-        <item itemvalue="Node.js.01.js" />
       </list>
     </recent_temporary>
   </component>
@@ -130,7 +133,7 @@
       <workItem from="1598945059077" duration="18807000" />
       <workItem from="1599031393953" duration="109348000" />
       <workItem from="1600152604427" duration="688000" />
-      <workItem from="1600321411290" duration="12744000" />
+      <workItem from="1600321411290" duration="34668000" />
     </task>
     <servers />
   </component>
@@ -165,10 +168,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1598945516055" />
-    <state x="702" y="380" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600330298559">
+    <state x="702" y="380" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600423413030">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="702" y="380" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1600330298559" />
+    <state x="702" y="380" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1600423413030" />
     <state x="690" y="326" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599719552950">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -177,22 +180,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="334" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1599639446427" />
-    <state width="1899" height="306" key="GridCell.Tab.0.bottom" timestamp="1600334078644">
+    <state width="1899" height="306" key="GridCell.Tab.0.bottom" timestamp="1600423348205">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="306" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1600334078644" />
-    <state width="1899" height="306" key="GridCell.Tab.0.center" timestamp="1600334078644">
+    <state width="1899" height="306" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1600423348205" />
+    <state width="1899" height="306" key="GridCell.Tab.0.center" timestamp="1600423348205">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="306" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1600334078644" />
-    <state width="1899" height="306" key="GridCell.Tab.0.left" timestamp="1600334078643">
+    <state width="1899" height="306" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1600423348205" />
+    <state width="1899" height="306" key="GridCell.Tab.0.left" timestamp="1600423348205">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="306" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1600334078643" />
-    <state width="1899" height="306" key="GridCell.Tab.0.right" timestamp="1600334078644">
+    <state width="1899" height="306" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1600423348205" />
+    <state width="1899" height="306" key="GridCell.Tab.0.right" timestamp="1600423348205">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="306" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1600334078644" />
+    <state width="1899" height="306" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1600423348205" />
     <state width="1899" height="226" key="GridCell.Tab.1.bottom" timestamp="1600152296336">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -261,9 +264,9 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="616" y="270" key="run.anything.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1598945493102" />
-    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1600326629787">
+    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1600421730817">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1600326629787" />
+    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1600421730817" />
   </component>
 </project>

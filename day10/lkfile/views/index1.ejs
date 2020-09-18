@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/" method="post">
+        <label>
+            时间：
+            <input type="text" name="l_time">
+        </label><br>
+        <label>
+            地点：
+            <input type="text" name="l_address">
+        </label><br>
+        <label>
+            人物：
+            <input type="text" name="l_person">
+        </label><br>
+        <input id="submit" type="button" value="提交">
+    </form>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $('#submit').on('click', function (e){
+            // console.log($('form').serialize());
+
+            var $form = $('form');
+            $.ajax({
+                url: $form.attr('action'),
+                type: $form.attr('method'),
+                data: $form.serialize(),
+                success: function (res){
+                    console.log(res);
+                }
+            });
+
+            // 阻止默认时间
+            return false;
+        });
+
+    </script>
+
+</body>
+</html>

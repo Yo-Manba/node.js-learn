@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <label>
+            时间：
+            <input type="text" name="l_time">
+        </label><br>
+        <label>
+            地点：
+            <input type="text" name="l_address">
+        </label><br>
+        <label>
+            人物：
+            <input type="file" name="l_person">
+        </label><br>
+        <input id="submit" type="button" value="提交">
+    </form>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $('#submit').on('click', function (e){
+            var $form = $('form');
+            $.ajax({
+                url: $form.attr('action'),
+                type: $form.attr('method'),
+                data: new FormData($form[0]),
+                processData: false,
+                contentType: false,
+                success: function (res){
+                    console.log(res);
+                }
+            });
+        });
+
+        // form 表单默认提交方式
+        // $('form').on('submit', function (e){
+        //     $.ajax({
+        //         url: $(this).attr('action'),
+        //         type: $(this).attr('method'),
+        //         data: new FormData($(this)[0]),
+        //         processData: false,
+        //         contentType: false,
+        //         success: function (res){
+        //             console.log(res);
+        //         }
+        //     });
+        //      return false;
+        // });
+
+    </script>
+
+</body>
+</html>
