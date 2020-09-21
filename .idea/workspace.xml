@@ -28,7 +28,9 @@
   <component name="ChangeListManager">
     <list default="true" id="fc0ddfd7-3d5b-4b55-bd54-65dd1b56c2c4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day8/lkschool/models/Sowing.js" beforeDir="false" afterPath="$PROJECT_DIR$/day8/lkschool/models/Sowing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day10/lkschool/models/Sowing.js" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/models/Sowing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day10/lkschool/routes/sowing.js" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/routes/sowing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day10/lkschool/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/src/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +73,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.13.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.12.54" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day10/lkfile/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day10/lkschool" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
@@ -87,11 +89,11 @@
       <recent name="D:\我的日常开发\nodejs学习\day2\03-fs\source" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\我的日常开发\nodejs学习\day10\lkschool" />
       <recent name="D:\我的日常开发\nodejs学习\day10\lkfile\views" />
       <recent name="D:\我的日常开发\nodejs学习\day8\lkschool\public\back\images" />
       <recent name="D:\我的日常开发\nodejs学习\day8\lkschool\public\web\Css" />
       <recent name="D:\我的日常开发\nodejs学习\day8\lkschool\views\web" />
-      <recent name="D:\我的日常开发\nodejs学习\day8\lkschool\public\web" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.app.js (1)">
@@ -131,7 +133,7 @@
       <workItem from="1598945059077" duration="18807000" />
       <workItem from="1599031393953" duration="109348000" />
       <workItem from="1600152604427" duration="688000" />
-      <workItem from="1600321411290" duration="36095000" />
+      <workItem from="1600321411290" duration="44191000" />
     </task>
     <servers />
   </component>
@@ -178,22 +180,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="334" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1599639446427" />
-    <state width="1899" height="306" key="GridCell.Tab.0.bottom" timestamp="1600423827908">
+    <state width="1899" height="482" key="GridCell.Tab.0.bottom" timestamp="1600669395982">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="306" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1600423827908" />
-    <state width="1899" height="306" key="GridCell.Tab.0.center" timestamp="1600423827908">
+    <state width="1899" height="482" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1600669395982" />
+    <state width="1899" height="482" key="GridCell.Tab.0.center" timestamp="1600669395982">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="306" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1600423827908" />
-    <state width="1899" height="306" key="GridCell.Tab.0.left" timestamp="1600423827908">
+    <state width="1899" height="482" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1600669395982" />
+    <state width="1899" height="482" key="GridCell.Tab.0.left" timestamp="1600669395982">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="306" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1600423827908" />
-    <state width="1899" height="306" key="GridCell.Tab.0.right" timestamp="1600423827908">
+    <state width="1899" height="482" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1600669395982" />
+    <state width="1899" height="482" key="GridCell.Tab.0.right" timestamp="1600669395982">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="306" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1600423827908" />
+    <state width="1899" height="482" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1600669395982" />
     <state width="1899" height="226" key="GridCell.Tab.1.bottom" timestamp="1600152296336">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
