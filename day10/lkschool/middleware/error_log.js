@@ -1,21 +1,21 @@
 
 import Error from "../models/Error";
 
-export default (err, req, res, next)=>{
-    const error = new Error({
+export default (error, req, res, next)=>{
+    const error_log = new Error({
         // 错误名称
-        error_name: err.name,
+        error_name: error.name,
         // 错误消息
-        error_message: err.message,
+        error_message: error.message,
         // 错误堆栈
-        error_stack: err.stack
+        error_stack: error.stack
     });
 
-    error.save((err, result)=>{
+    error_log.save((err, result)=>{
         res.json({
             status: 500,
             result: '服务器内部错误',
-            message: err.message
+            message: error.message
         });
     });
 }
