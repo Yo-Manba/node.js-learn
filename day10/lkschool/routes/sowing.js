@@ -1,5 +1,8 @@
 import express from 'express'
-import Sowing from "../models/Sowing";
+import Sowing from "../models/Sowing"
+import formidable from 'formidable'
+import { basename } from 'path'
+import config from './../src/config'
 
 const router = express.Router({});
 
@@ -7,32 +10,79 @@ const router = express.Router({});
 /*
  * 往数据库中添加一条记录
  */
-router.post('/sowing/api/add', (req, res)=>{
-    // 1. 获取数据
-    const body = req.body;
+router.post('/sowing/api/add', (req, res, next)=>{
 
-    // 操作数据库
-    const sowing = new Sowing({
-        // 图片名称
-        image_title: body.image_title,
-        // 图片地址
-        image_url: body.image_url,
-        // 图片跳转链接
-        image_link: body.image_link,
-        // 图片上架时间
-        s_time: body.s_time,
-        // 图片下架时间
-        e_time: body.e_time
-    });
+    // 普通方式上传数据 **************************************************
+    // // 1. 获取数据
+    // const body = req.body;
+    // // 操作数据库
+    // const sowing = new Sowing({
+    //     // 图片名称
+    //     image_title: body.image_title,
+    //     // 图片地址
+    //     image_url: body.image_url,
+    //     // 图片跳转链接
+    //     image_link: body.image_link,
+    //     // 图片上架时间
+    //     s_time: body.s_time,
+    //     // 图片下架时间
+    //     e_time: body.e_time
+    // });
+    //
+    // sowing.save((err, result)=>{
+    //     if(err){
+    //         return next(err);
+    //     };
+    //     res.json({
+    //         status: 200,
+    //         result: '添加轮播图成功'
+    //     })
+    // });
 
-    sowing.save((err, result)=>{
-        if(err){
+    // formidable 方式上传数据 **************************************************
+    // 1. 创建实例
+    const form = formidable({ multiples: true });
+    // 2. 指定文件上传的目录
+    form.uploadDir = config.uploadPath;
+    // 3. 指定文件的后缀
+    form.keepExtensions = true;
+
+    // 解析 request 发送过来的数据
+    form.parse(req, (err, fields, files) => {
+        if (err) {
             return next(err);
         };
-        res.json({
-            status: 200,
-            result: '添加轮播图成功'
-        })
+        console.log(fields);
+        console.log(files);
+
+        //  1. 获取数据
+        let body = fields;
+        // 2. 解析上传的文件路径，取出文件名保存到数据库
+        body.image_url = basename(files.image_url.path);
+
+        // 3. 操作数据库
+        const sowing = new Sowing({
+            // 图片名称
+            image_title: body.image_title,
+            // 图片地址
+            image_url: body.image_url,
+            // 图片跳转链接
+            image_link: body.image_link,
+            // 图片上架时间
+            s_time: body.s_time,
+            // 图片下架时间
+            e_time: body.e_time
+        });
+
+        sowing.save((err, result)=>{
+            if(err){
+                return next(err);
+            };
+            res.json({
+                status: 200,
+                result: '添加轮播图成功'
+            })
+        });
     });
 });
 
@@ -123,7 +173,13 @@ router.get('/sowing/api/deleteOne/:sowingId', (req, res, next)=>{
  * 加载轮播图列表页面
  */
 router.get('/back/s_list', (req, res, next)=>{
-    res.render('back/sowing_list.html');
+    //查询所有数据
+    Sowing.find((err, sowings, next)=>{
+        if(err){
+            return next(err);
+        };
+        res.render('back/sowing_list.html', {sowings});
+    });
 });
 
 /**
