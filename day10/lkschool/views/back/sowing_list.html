@@ -35,14 +35,14 @@
                         <td>{{loop.index}}</td>
                         <td>{{sowing.image_title}}</td>
                         <td>
-                            <img src="/uploads/{{sowing.image_url}}" alt="" style="width: 400px; height: auto; display: inline-block; text-align: center;">
+                            <img src="/uploads/{{sowing.image_url}}" alt="" style="width: auto; height: 60px; display: inline-block; text-align: center;">
                         </td>
                         <td>{{sowing.image_link}}</td>
                         <td>{{sowing.s_time}}</td>
                         <td>{{sowing.e_time}}</td>
                         <td>
-                            <a href="javascript:;" class="btn btn-primary btn-xs">编辑</a>
-                            <a href="javascript:;" class="btn btn-danger btn-xs">删除</a>
+                            <a data-id="{{sowing._id}}" class="btn btn-primary btn-xs s_edit">编辑</a>
+                            <a data-id="{{sowing._id}}" class="btn btn-danger btn-xs s_delete">删除</a>
                         </td>
                     </tr>
                     {% endfor %}
@@ -55,4 +55,33 @@
 
 <!--  新增的脚本文件  -->
 {% block script %}
+<script>
+    $(function (){
+       // 点击编辑
+       $('.s_edit').on('click', function (){
+          let sowingId = $(this).attr('data-id');
+          window.location.href = `/back/s_edit?sid=${sowingId}`;
+       });
+
+        // 点击删除
+        $('.s_delete').on('click', function (){
+            let sowingId = $(this).attr('data-id');
+            // 发起请求
+            $.ajax({
+                url: 'http://localhost:3000/sowing/api/deleteOne/' + sowingId,
+                type: 'get',
+                dataType: 'json',
+                success: function (data){
+                    console.log(data);
+                    if (data.status === 200){
+                        alert('删除成功');
+                    }else {
+                        alert('删除失败');
+                    }
+                    window.location.reload();
+                }
+            })
+        });
+    });
+</script>
 {% endblock %}

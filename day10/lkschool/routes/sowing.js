@@ -106,13 +106,13 @@ router.get('/sowing/api/list', (req, res, next)=>{
  */
 router.get('/sowing/api/single/:sowingId', (req, res, next)=>{
     Sowing.find({}, { l_edit:0, c_time:0 },(err, docs)=>{
-        Sowing.findById(req.params.sowingId, { l_edit:0, c_time:0 }, (err, docs)=>{
+        Sowing.findById(req.params.sowingId, { l_edit:0, c_time:0 }, (err, data)=>{
             if(err){
                 return next(err);
             };
             res.json({
                 status: 200,
-                result: docs
+                result: data
             });
         });
     });
@@ -122,33 +122,48 @@ router.get('/sowing/api/single/:sowingId', (req, res, next)=>{
  * 根据id去修改一条轮播图数据
  */
 router.post('/sowing/api/edit', (req, res)=>{
-    // 1. 根据id查询数据
-    Sowing.findById(req.body.id, (err, sowing)=>{
-        if (err){
+    // formidable 方式上传数据 **************************************************
+    // 1. 创建实例
+    const form = formidable({ multiples: true });
+    // 2. 指定文件上传的目录
+    form.uploadDir = config.uploadPath;
+    // 3. 指定文件的后缀
+    form.keepExtensions = true;
+
+    // 解析 request 发送过来的数据
+    form.parse(req, (err, fields, files) => {
+        if (err) {
             return next(err);
         };
+        console.log(fields);
+        console.log(files);
 
-        // 2. 修改内容
-        const body = req.body;
-        sowing.image_title = body.image_title;
-        sowing.image_url = body.image_url;
-        sowing.image_link = body.image_link;
-        sowing.s_time = body.s_time;
-        sowing.e_time = body.e_time;
-
-        // 3. 保存
-        /**
-         * _id 如果是一样的，就不会新增数据，而是更新已有的数据
-         */
-        sowing.save((err, result)=>{
-            if (err){
+        //  1. 获取普通数据
+        let body = fields;
+        //  2. 根据id查询文档
+        Sowing.findById(body.id, (err, sowing)=>{
+            if(err){
                 return next(err);
             };
-            res.json({
-                status: 200,
-                result: '修改数据成功'
+
+            // 修改文档的内容
+            sowing.image_title = body.image_title;
+            sowing.image_url = body.image_url || basename(files.image_url.path);
+            sowing.image_link = body.image_link;
+            sowing.s_time = body.s_time;
+            sowing.e_time = body.e_time;
+            sowing.l_edit = Date.now();
+
+            sowing.save((err, result)=>{
+                if(err){
+                    return next(err);
+                };
+                res.json({
+                    status: 200,
+                    result: '修改轮播图成功'
+                })
             });
-        })
+        });
     });
 });
 
@@ -187,6 +202,13 @@ router.get('/back/s_list', (req, res, next)=>{
  */
 router.get('/back/s_add', (req, res, next)=>{
     res.render('back/sowing_add.html');
+});
+
+/**
+ * 加载修改轮播图页面
+ */
+router.get('/back/s_edit', (req, res, next)=>{
+    res.render('back/sowing_edit.html');
 });
 
 export default router;
