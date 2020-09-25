@@ -30,12 +30,15 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day10/lkschool/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day10/lkschool/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day10/lkschool/routes/sowing.js" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/routes/sowing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day10/lkschool/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/routes/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day10/lkschool/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/src/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day10/lkschool/views/back/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/views/back/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day10/lkschool/views/back/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/views/back/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day10/lkschool/views/back/reset_pwd.html" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/views/back/reset_pwd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day10/lkschool/views/back/sideBar.html" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/views/back/sideBar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day10/lkschool/views/back/sowing_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/views/back/sowing_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day10/lkschool/views/back/sowing_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/views/back/sowing_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day10/lkschool/views/back/sowing_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/views/back/sowing_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day10/lkschool/views/back/user_center.html" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/views/back/user_center.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day10/lkschool/views/back/user_message.html" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/views/back/user_message.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +141,7 @@
       <workItem from="1598945059077" duration="18807000" />
       <workItem from="1599031393953" duration="109348000" />
       <workItem from="1600152604427" duration="688000" />
-      <workItem from="1600321411290" duration="93622000" />
+      <workItem from="1600321411290" duration="114549000" />
     </task>
     <servers />
   </component>
@@ -173,10 +176,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1598945516055" />
-    <state x="702" y="380" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600764487301">
+    <state x="702" y="380" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601025743741">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="702" y="380" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1600764487301" />
+    <state x="702" y="380" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1601025743741" />
     <state x="690" y="326" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599719552950">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -269,9 +272,9 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="616" y="270" key="run.anything.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1598945493102" />
-    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1600933491754">
+    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1601019441959">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1600933491754" />
+    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1601019441959" />
   </component>
 </project>

@@ -1,8 +1,8 @@
 import express from 'express'
-import Sowing from "../models/Sowing"
 import formidable from 'formidable'
 import { basename } from 'path'
 import config from './../src/config'
+import Sowing from "../models/Sowing"
 
 const router = express.Router({});
 
@@ -10,7 +10,7 @@ const router = express.Router({});
 /*
  * 往数据库中添加一条记录
  */
-router.post('/sowing/api/add', (req, res, next)=>{
+router.post('/back/sowing/api/add', (req, res, next)=>{
 
     // 普通方式上传数据 **************************************************
     // // 1. 获取数据
@@ -89,7 +89,7 @@ router.post('/sowing/api/add', (req, res, next)=>{
 /**
  * 获取所有的轮播图列表
  */
-router.get('/sowing/api/list', (req, res, next)=>{
+router.get('/back/sowing/api/list', (req, res, next)=>{
     Sowing.find({}, { l_edit:0, c_time:0 },(err, docs)=>{
         if(err){
             return next(err);
@@ -104,7 +104,7 @@ router.get('/sowing/api/list', (req, res, next)=>{
 /**
  * 获取一条轮播图数据
  */
-router.get('/sowing/api/single/:sowingId', (req, res, next)=>{
+router.get('/back/sowing/api/single/:sowingId', (req, res, next)=>{
     Sowing.find({}, { l_edit:0, c_time:0 },(err, docs)=>{
         Sowing.findById(req.params.sowingId, { l_edit:0, c_time:0 }, (err, data)=>{
             if(err){
@@ -121,7 +121,7 @@ router.get('/sowing/api/single/:sowingId', (req, res, next)=>{
 /**
  * 根据id去修改一条轮播图数据
  */
-router.post('/sowing/api/edit', (req, res)=>{
+router.post('/back/sowing/api/edit', (req, res)=>{
     // formidable 方式上传数据 **************************************************
     // 1. 创建实例
     const form = formidable({ multiples: true });
@@ -137,6 +137,7 @@ router.post('/sowing/api/edit', (req, res)=>{
         };
         console.log(fields);
         console.log(files);
+        console.log(files.image_url.path);
 
         //  1. 获取普通数据
         let body = fields;
@@ -170,7 +171,7 @@ router.post('/sowing/api/edit', (req, res)=>{
 /**
  * 根据id去删除一条轮播图数据
  */
-router.get('/sowing/api/deleteOne/:sowingId', (req, res, next)=>{
+router.get('/back/sowing/api/deleteOne/:sowingId', (req, res, next)=>{
     Sowing.deleteOne({_id: req.params.sowingId}, (err, result)=>{
         if(err){
             return next(err);

@@ -89,7 +89,7 @@
 
             // 2. 发起ajax请求
             $.ajax({
-                url: 'http://localhost:3000/sowing/api/single/' + sowingId,
+                url: 'http://localhost:3000/back/sowing/api/single/' + sowingId,
                 type: 'get',
                 dataType: 'json',
                 success: function (data){
@@ -97,7 +97,7 @@
 
                     // 2.1 注入数据
                     let tpl = `
-                        <form id="myform" action="/sowing/api/edit" method="post" class="form-horizontal" enctype="multipart/form-data">
+                        <form id="myform" action="/back/sowing/api/edit" method="post" class="form-horizontal" enctype="multipart/form-data">
                             <div class="form-group">
                                 <label for="" class="col-md-3 control-label">图片名称</label>
                                 <div class="col-md-5">

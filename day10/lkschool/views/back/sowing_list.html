@@ -68,7 +68,7 @@
             let sowingId = $(this).attr('data-id');
             // 发起请求
             $.ajax({
-                url: 'http://localhost:3000/sowing/api/deleteOne/' + sowingId,
+                url: 'http://localhost:3000/back/sowing/api/deleteOne/' + sowingId,
                 type: 'get',
                 dataType: 'json',
                 success: function (data){
