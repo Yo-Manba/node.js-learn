@@ -197,6 +197,51 @@ router.post('/back/user/api/edit', (req, res)=>{
     });
 });
 
+/**
+ * 根据 token 修改密码
+ */
+router.post('/back/user/api/reset', (req, res, next)=>{
+    // 获取数据
+    const  token = req.body.token;
+    const  old_pwd = req.body.old_pwd;
+    const  new_pwd = req.body.new_pwd;
+
+    // 根据 token 查询用户
+    User.findById(token, (err, data)=>{
+        if(err){
+            return next(err);
+        };
+
+        if(data){
+            // 取出散列做比较
+            if(data.user_pwd !== old_pwd){
+                res.json({
+                    status: 1,
+                    result: '密码不正确！'
+                });
+            }else {
+                data.user_pwd = new_pwd;
+                data.save((err, result)=>{
+                    if(err){
+                        return next(err);
+                    };
+                    res.json({
+                        status: 200,
+                        result: '密码修改成功！'
+                    });
+                });
+            }
+        }else {
+            res.json({
+                status: 1,
+                result: '非法用户！'
+            });
+        };
+
+    })
+
+});
+
 // ************************************************* 接口API - end ***********************************************************
 
 

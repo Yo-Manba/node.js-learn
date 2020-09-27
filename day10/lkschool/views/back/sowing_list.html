@@ -17,7 +17,8 @@
             <a href="/back/s_add" class="btn btn-danger btn-sm pull-right">添加轮播图</a>
         </div>
         <div class="panel panel-default">
-            <table class="table table-bordered">
+            {% if sowings.length > 0 %}
+                <table class="table table-bordered">
                 <thead>
                     <tr>
                         <td>序号</td>
@@ -48,6 +49,12 @@
                     {% endfor %}
                 </tbody>
             </table>
+            {% else %}
+                <div style="text-align: center;">
+                    <img src="./images/liao.jpg" style="width: 200px; display: inline-block; margin: 20px 0;" alt="">
+                    <h3>小撩温馨提示：页面还没有内容哦，赶紧去添加吧！</h3>
+                </div>
+            {% endif %}
         </div>
     </div>
 </div>

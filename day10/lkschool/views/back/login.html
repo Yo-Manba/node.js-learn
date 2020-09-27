@@ -57,7 +57,7 @@
                         console.log(res);
                         if(res.status === 200){ // 登录成功
                             // 保存token到本地
-                            sessionStorage.setItem('result', JSON.stringify(res.result));
+                            localStorage.setItem('result', JSON.stringify(res.result));
                             // 跳转到后端的主界面
                             window.location.href = '/back'
                         }else { // 登录失败

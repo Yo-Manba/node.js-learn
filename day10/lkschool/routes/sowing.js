@@ -137,7 +137,6 @@ router.post('/back/sowing/api/edit', (req, res)=>{
         };
         console.log(fields);
         console.log(files);
-        console.log(files.image_url.path);
 
         //  1. 获取普通数据
         let body = fields;
