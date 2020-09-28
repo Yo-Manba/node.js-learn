@@ -28,15 +28,11 @@
   <component name="ChangeListManager">
     <list default="true" id="fc0ddfd7-3d5b-4b55-bd54-65dd1b56c2c4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day10/lkschool/routes/source.js" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/routes/source.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day10/lkschool/routes/sowing.js" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/routes/sowing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day10/lkschool/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/routes/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day10/lkschool/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day10/lkschool/views/back/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/views/back/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day10/lkschool/views/back/reset_pwd.html" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/views/back/reset_pwd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day10/lkschool/views/back/sideBar.html" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/views/back/sideBar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day10/lkschool/views/back/sowing_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/views/back/sowing_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day10/lkschool/views/back/user_center.html" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/views/back/user_center.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day10/lkschool/views/back/user_message.html" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/views/back/user_message.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day10/lkschool/views/back/source_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/views/back/source_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day10/lkschool/views/back/source_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/views/back/source_list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +75,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.13.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.12.54" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day10/lkschool/public/back/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day10/lkschool/views/back" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
@@ -95,8 +91,8 @@
       <recent name="D:\我的日常开发\nodejs学习\day2\03-fs\source" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\我的日常开发\nodejs学习\day10\lkschool\public\back\js" />
       <recent name="D:\我的日常开发\nodejs学习\day10\lkschool\views\back" />
+      <recent name="D:\我的日常开发\nodejs学习\day10\lkschool\public\back\js" />
       <recent name="D:\我的日常开发\nodejs学习\day10\lkschool\public\back\images" />
       <recent name="D:\我的日常开发\nodejs学习\day10\lkschool\routes" />
       <recent name="D:\我的日常开发\nodejs学习\day10\lkschool\models" />
@@ -139,7 +135,7 @@
       <workItem from="1598945059077" duration="18807000" />
       <workItem from="1599031393953" duration="109348000" />
       <workItem from="1600152604427" duration="688000" />
-      <workItem from="1600321411290" duration="129796000" />
+      <workItem from="1600321411290" duration="136294000" />
     </task>
     <servers />
   </component>

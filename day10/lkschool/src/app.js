@@ -25,7 +25,7 @@ app.use(session({
     name: 'like_id',    // 返回客户端 key 的名称，默认为 connect_sid
     resave: false,      // 强制保存 session，即使他没有变化
     saveUninitialized: true,    // 强制将未初始化的 session 存储。当新建一个 session 并且未设定属性或值时，它就处于未初始化状态。在设定 cookie 前，这对于登录验证，减轻服务器存储压力，权限控制是有帮助的，默认为 true.
-    cookie: { maxAge: 864000000},
+    cookie: { maxAge: 24 * 3600},
     rolling: true,      // 在每次请求时进行设置 cookie，将重置 cookie 过期时间
     store: new mongoStore({     // 将 session 数据存储到 mongo 数据库中
         url: 'mongodb://127.0.0.1/college',     // 数据库地址

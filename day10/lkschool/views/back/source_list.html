@@ -42,8 +42,8 @@
                         <td>{{item.price}}</td>
                         <td>{{item.author}}</td>
                         <td>
-                            <a data-id="{{item._id}}" class="btn btn-primary btn-xs s_edit">编辑</a>
-                            <a data-id="{{item._id}}" class="btn btn-danger btn-xs s_delete">删除</a>
+                            <a id="edit" data-id="{{item._id}}" class="btn btn-primary btn-xs">编辑</a>
+                            <a id="delete" data-id="{{item._id}}" class="btn btn-danger btn-xs">删除</a>
                         </td>
                     </tr>
                     {% endfor %}
@@ -65,17 +65,17 @@
 <script>
     $(function (){
        // 点击编辑
-       $('.s_edit').on('click', function (){
-          let sowingId = $(this).attr('data-id');
-          window.location.href = `/back/s_edit?sid=${sowingId}`;
+       $('#edit').on('click', function (){
+          let id = $(this).attr('data-id');
+          window.location.href = `/back/source_edit?id=${id}`;
        });
 
         // 点击删除
-        $('.s_delete').on('click', function (){
-            let sowingId = $(this).attr('data-id');
+        $('#delete').on('click', function (){
+            let id = $(this).attr('data-id');
             // 发起请求
             $.ajax({
-                url: 'http://localhost:3000/back/sowing/api/deleteOne/' + sowingId,
+                url: 'http://localhost:3000/back/source/api/deleteOne/' + id,
                 type: 'get',
                 dataType: 'json',
                 success: function (data){

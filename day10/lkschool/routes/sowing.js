@@ -105,15 +105,13 @@ router.get('/back/sowing/api/list', (req, res, next)=>{
  * 获取一条轮播图数据
  */
 router.get('/back/sowing/api/single/:sowingId', (req, res, next)=>{
-    Sowing.find({}, { l_edit:0, c_time:0 },(err, docs)=>{
-        Sowing.findById(req.params.sowingId, { l_edit:0, c_time:0 }, (err, data)=>{
-            if(err){
-                return next(err);
-            };
-            res.json({
-                status: 200,
-                result: data
-            });
+    Sowing.findById(req.params.sowingId, { l_edit:0, c_time:0 }, (err, data)=>{
+        if(err){
+            return next(err);
+        };
+        res.json({
+            status: 200,
+            result: data
         });
     });
 });
