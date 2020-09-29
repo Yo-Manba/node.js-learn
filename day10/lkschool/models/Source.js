@@ -11,7 +11,7 @@ const sourceSchema = mongoose.Schema({
     // 缩略图
     small_img: {type: String, require: true},
     // 是否收藏 0-不收藏 1-收藏
-    is_store: {type: String, default: 0},
+    is_store: {type: Number, default: 0},
     // 价格
     price: {type: Number, default: 0},
     // 阅读次数

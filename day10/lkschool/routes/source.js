@@ -6,7 +6,7 @@ import Source from "../models/Source"
 
 const router = express.Router({});
 
-// ************************************************* 接口API - start ***********************************************************
+// ************************************************* 后端接口API - start ***********************************************************
 /**
  * 图片上传到 uploads 文件夹
  */
@@ -87,17 +87,89 @@ router.post('/back/source/api/add', (req, res, next)=>{
 });
 
 /**
- * 加载文章列表页面
+ * 加载文章资源列表（自制分页器）
  */
-router.get('/back/source_list', (req, res, next)=>{
-    //查询所有数据
-    Source.find((err, sources, next)=>{
+// router.get('/back/source_list', (req, res, next)=>{
+//     //查询所有数据
+//     Source.find((err, sources, next)=>{
+//         if(err){
+//             return next(err);
+//         };
+//         res.render('back/source_list.html', {sources});
+//     });
+// });
+
+/**
+ * 加载文章资源列表（自制分页器）
+ */
+// router.get('/back/source_list', (req, res, next)=>{
+//     // 接收两个参数
+//     let page = Number.parseInt(req.query.page, 10) || 1;
+//     let pageSize = Number.parseInt(req.query.pageSize, 10) || 2;
+//
+//     /**
+//      * 查询公式推理
+//      * page=1 -- pageSize=3
+//      *  1  0-2
+//      *  2  3-5
+//      *  3  6-8
+//      *  数据库查询的初始位置 = (page-1) * pageSize
+//      */
+//
+//     //查询所有对应数据
+//     Source.find().skip((page-1) * pageSize).limit(pageSize).exec((err, sources)=>{
+//         if(err){
+//             return next(err);
+//         };
+//
+//         // 返回总页码和当前页码
+//         Source.countDocuments((err, count)=>{
+//             if(err){
+//                 return next(err);
+//             };
+//             let totalPage = Math.ceil(count / pageSize);
+//             res.render('back/source_list.html', {sources, totalPage, page});
+//         });
+//     });
+// });
+
+/**
+ * 获取文章总数量 (集成三方分页器)
+ */
+router.get('/back/source/api/count', (req, res, next)=>{
+    // 返回总页码
+    Source.countDocuments((err, count)=>{
         if(err){
             return next(err);
         };
-        res.render('back/source_list.html', {sources});
+        res.json({
+            status: 200,
+            result: count
+        });
     });
 });
+
+/**
+ * 加载文章资源列表 (集成三方分页器)
+ */
+router.get('/back/source/api/list', (req, res, next)=>{
+    // 接收两个参数
+    let page = Number.parseInt(req.query.page, 10) || 1;
+    let pageSize = Number.parseInt(req.query.pageSize, 10) || 2;
+
+    //查询所有对应数据
+    Source.find().skip((page-1) * pageSize).limit(pageSize).exec((err, sources)=>{
+        if(err){
+            return next(err);
+        };
+
+        res.json({
+            status: 200,
+            result: sources
+        });
+    });
+});
+
 
 /**
  * 获取一条文章数据
@@ -182,11 +254,112 @@ router.get('/back/source/api/deleteOne/:id', (req, res, next)=>{
     });
 });
 
-// ************************************************* 接口API - end ***********************************************************
+// ************************************************* 后端接口API - end ***********************************************************
 
 
-// ************************************************* 页面路由 - start ***********************************************************
 
+// ************************************************* 前端接口API - start ***********************************************************
+/**
+ * 获取文章总数量
+ */
+router.get('/web/source/api/count', (req, res, next)=>{
+    // 返回总页码
+    Source.countDocuments((err, count)=>{
+        if(err){
+            return next(err);
+        };
+        res.json({
+            status: 200,
+            result: count
+        });
+    });
+});
+
+/**
+ * 获取文章列表
+ */
+router.get('/web/source/api/list', (req, res, next)=>{
+    // 接收客户端传递的参数
+    let {page, pageSize, sortBy} = req.query;
+    page = Number.parseInt(page, 10) || 1;
+    pageSize = Number.parseInt(pageSize, 10) || 20;
+
+    // 数据查询规则
+    let sortObj;
+    if (sortBy === 'price'){
+        sortObj = {'price': -1};
+    }else {
+        sortObj = {'read_count': -1};
+    }
+
+    //查询所有对应数据
+    Source.find({}, 'title small_img price is_store').skip((page-1) * pageSize).sort(sortObj).limit(pageSize).exec((err, sources)=>{
+        if(err){
+            return next(err);
+        };
+
+        res.json({
+            status: 200,
+            result: sources
+        });
+    });
+});
+
+/**
+ * 获取文章详情
+ */
+router.get('/web/source/api/content/:id', (req, res, next)=>{
+    //查询所有对应数据
+    Source.findById(req.params.id, (err, data)=>{
+        if(err){
+            return next(err);
+        };
+
+        res.json({
+            status: 200,
+            result: data
+        });
+    });
+});
+
+/**
+ * 详情页面阅读量处理
+ */
+router.get('/web/source/api/content/read_count/:id', (req, res, next)=>{
+    //查询所有对应数据
+    Source.findById(req.params.id, 'read_count', (err, data)=>{
+        if(err){
+            return next(err);
+        };
+
+        // 取出要修改的数据
+        data.read_count += 1;
+
+        // 保存
+        data.save((err, result)=>{
+            if(err){
+                return next(err);
+            };
+
+            res.json({
+                status: 200,
+                result: result
+            });
+        });
+    });
+});
+
+// ************************************************* 前端接口API - end ***********************************************************
+
+
+
+// ************************************************* 后端页面路由 - start ***********************************************************
+/**
+ * 加载文章列表页面
+ */
+router.get('/back/source_list', (req, res, next)=>{
+    res.render('back/source_list.html');
+});
 
 /**
  * 加载添加资源文章页面
@@ -202,6 +375,7 @@ router.get('/back/source_edit', (req, res, next)=>{
     res.render('back/source_edit.html');
 });
 
-// ************************************************* 页面路由 - end ***********************************************************
+// ************************************************* 后端页面路由 - end ***********************************************************
+
 
 export default router;

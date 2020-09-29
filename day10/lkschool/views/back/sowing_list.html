@@ -72,22 +72,24 @@
 
         // 点击删除
         $('.s_delete').on('click', function (){
-            let sowingId = $(this).attr('data-id');
-            // 发起请求
-            $.ajax({
-                url: 'http://localhost:3000/back/sowing/api/deleteOne/' + sowingId,
-                type: 'get',
-                dataType: 'json',
-                success: function (data){
-                    console.log(data);
-                    if (data.status === 200){
-                        alert('删除成功');
-                    }else {
-                        alert('删除失败');
+            if(window.confirm('您确定要删除此项吗？')){
+                let sowingId = $(this).attr('data-id');
+                // 发起请求
+                $.ajax({
+                    url: 'http://localhost:3000/back/sowing/api/deleteOne/' + sowingId,
+                    type: 'get',
+                    dataType: 'json',
+                    success: function (data){
+                        console.log(data);
+                        if (data.status === 200){
+                            alert('删除成功');
+                        }else {
+                            alert('删除失败');
+                        }
+                        window.location.reload();
                     }
-                    window.location.reload();
-                }
-            })
+                });
+            };
         });
     });
 </script>
