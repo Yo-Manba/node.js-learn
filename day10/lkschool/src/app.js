@@ -62,6 +62,6 @@ app.use((req, res)=>{
     res.render('404.html');
 })
 
-app.listen(3000, ()=>{
-    console.log('server is running');
+app.listen(config.port, ()=>{
+    console.log(`服务器已启动，端口为：${config.port}`);
 })

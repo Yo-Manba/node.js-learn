@@ -86,7 +86,7 @@
         // 1. 截取id
         if(window.location.search.indexOf('?') !== -1){
             let sowingId = window.location.search.split('=')[1];
-
+            console.log(sowingId);
             // 2. 发起ajax请求
             $.ajax({
                 url: 'http://localhost:3000/back/sowing/api/single/' + sowingId,

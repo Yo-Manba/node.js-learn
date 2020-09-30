@@ -28,15 +28,14 @@
   <component name="ChangeListManager">
     <list default="true" id="fc0ddfd7-3d5b-4b55-bd54-65dd1b56c2c4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day10/lkschool/models/Source.js" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/models/Source.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day10/lkschool/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day10/lkschool/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day10/lkschool/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day10/lkschool/routes/source.js" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/routes/source.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day10/lkschool/views/back/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/views/back/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day10/lkschool/views/back/setting.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/day10/lkschool/views/back/sideBar.html" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/views/back/sideBar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day10/lkschool/views/back/source_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/views/back/source_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day10/lkschool/views/back/sowing_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/views/back/sowing_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day10/lkschool/views/web/resources.html" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/views/web/resources.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day10/lkschool/views/web/resources_content.html" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/views/web/resources_content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day10/lkschool/routes/sowing.js" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/routes/sowing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day10/lkschool/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day10/lkschool/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/src/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day10/lkschool/views/back/sowing_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/day10/lkschool/views/back/sowing_edit.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,11 +87,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\我的日常开发\nodejs学习\day10\lkschool\controller\sowing" />
       <recent name="D:\我的日常开发\nodejs学习\day8\lkschool\src" />
       <recent name="D:\我的日常开发\nodejs学习\day7\01-promise\data" />
       <recent name="D:\我的日常开发\nodejs学习\day5\02-express" />
       <recent name="D:\我的日常开发\nodejs学习\day3\01-fs" />
-      <recent name="D:\我的日常开发\nodejs学习\day2\03-fs\source" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\我的日常开发\nodejs学习\day10\lkschool\public\back\js" />
@@ -139,7 +138,7 @@
       <workItem from="1598945059077" duration="18807000" />
       <workItem from="1599031393953" duration="109348000" />
       <workItem from="1600152604427" duration="688000" />
-      <workItem from="1600321411290" duration="163886000" />
+      <workItem from="1600321411290" duration="170465000" />
     </task>
     <servers />
   </component>
@@ -266,10 +265,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="677" y="388" key="jetbrains.nodejs.interpreters-dialog/0.0.1920.1160@0.0.1920.1160" timestamp="1599639426106" />
-    <state x="616" y="270" key="run.anything.popup" timestamp="1598945493102">
+    <state x="616" y="270" width="672" height="677" key="run.anything.popup" timestamp="1601437602388">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="616" y="270" key="run.anything.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1598945493102" />
+    <state x="616" y="270" width="672" height="677" key="run.anything.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1601437602388" />
     <state x="623" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1601366825767">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>

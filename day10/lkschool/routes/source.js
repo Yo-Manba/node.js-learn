@@ -80,7 +80,7 @@ router.post('/back/source/api/add', (req, res, next)=>{
             };
             res.json({
                 status: 200,
-                result: '添加轮播图成功'
+                result: '添加文章成功'
             })
         });
     });
